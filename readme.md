@@ -58,3 +58,4 @@ The following websites have been tested and confirmed compatible with this proje
 - Tasteline.se
 - Bytheforkful.com
 - Bbc.co.uk/food/recipes
+- Baka.se

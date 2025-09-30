@@ -89,6 +89,27 @@ export const extractRecipe = (html: string): Recipe | null => {
   }
 
   if (ingredients.length === 0 && instructions.length === 0) {
+    // Baka.se selectors
+    const bakaIngredients = $(
+      'div.recipe__recipe__ingredients__section ul.recipe__recipe__list li[itemprop="recipeIngredient"]'
+    )
+      .map((_, el) => $(el).text().trim())
+      .get();
+    const bakaInstructions = $(
+      'div.recipe__recipe__instructions li[itemprop="recipeInstructions"] p'
+    )
+      .map((_, el) => $(el).text().trim())
+      .get();
+    const bakaTitle = $('h1').first().text().trim() || 'Untitled Recipe';
+
+    if (bakaIngredients.length > 0 || bakaInstructions.length > 0) {
+      return {
+        title: bakaTitle,
+        ingredients: bakaIngredients,
+        instructions: bakaInstructions,
+      };
+    }
+
     return null;
   }
 
