@@ -62,3 +62,4 @@ The following websites have been tested and confirmed compatible with this proje
 - Seriouseats.com
 - Kitchensanctuary.com
 - Jamieoliver.com
+- Pinchofnom.com
