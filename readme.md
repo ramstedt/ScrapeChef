@@ -59,3 +59,6 @@ The following websites have been tested and confirmed compatible with this proje
 - Bytheforkful.com
 - Bbc.co.uk/food/recipes
 - Baka.se
+- Seriouseats.com
+- Kitchensanctuary.com
+- Jamieoliver.com
